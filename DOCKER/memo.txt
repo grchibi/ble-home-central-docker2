@@ -1,0 +1,6 @@
+1. Compile
+
+  $ docker build -t debian-dev-bhcd2:0.5 -f DOCKER/Dockerfile.CPL .
+
+  $ docker run --name temp-bhcd2 -v "$PWD":/home -it debian-dev-bhcd2:0.5
+  / # cd home; make build
